@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+     .grid-item{
+        background-color:blue;
+        border:10px solid black;
+        padding:25px;
+        font-size:30px;
+        color:white;
+        text-align:center;
+     }
+     .grid-container{
+        display:grid;
+        grid-template-columns:auto auto auto;
+        background-color:antiquewhite;
+        padding:25px;
+
+     }
+     @media(max-width:300px){
+        .grid-container{
+            grid-template-column:repeat(3,1fr);
+            padding:10px;
+            background-color:red;
+
+        }
+        .grid-item{
+            background-color:green;
+            border:1px solid blueviolet;
+            padding:10px;
+            font-size:20px;
+            color:white;
+            text-align:centre;
+        }
+     }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Mango</div>
+        <div class="grid-item">Orange</div>
+        <div class="grid-item">Apple</div>
+        <div class="grid-item">Grapes</div>
+        <div class="grid-item">Pineapple</div>
+        <div class="grid-item">Watermelon</div>
+    </div>
+</body>
+</html>
